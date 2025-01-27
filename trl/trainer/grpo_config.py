@@ -110,3 +110,7 @@ class GRPOConfig(TrainingArguments):
         default=0.04,
         metadata={"help": "KL coefficient."},
     )
+    batch_size: Optional[int] = field(
+        default=None,
+        metadata={"help": "batch size across GPUs."},
+    )
